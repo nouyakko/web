@@ -15,9 +15,10 @@ services:
     build: ./frontend
     container_name: react
     ports:
-      - "5173:5173"
+      - "8080:8080"
     volumes:
       - ./frontend:/app
+      - /app/node_modules
     stdin_open: true
     tty: true
 
